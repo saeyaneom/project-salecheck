@@ -1977,6 +1977,10 @@ textarea.form-control {
 	margin-bottom: 30px;
 }
 .detail{
+	width: 100%;
+}
+
+.detail h6{
 	font-size: 20px;
 	color: #191919;
 	width: 100%;
@@ -1990,7 +1994,7 @@ textarea.form-control {
 	object-fit: contain;
 	img{
 		position:relative;
-		height: 100%;
+		height: auto;
 	}
 	h5{
 		font-size: 15px;
