@@ -300,8 +300,8 @@ template {
 [hidden] {
   display: none !important; }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, 
+.h1, .h2, .h3, .h4, .h5 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2; }
@@ -321,8 +321,6 @@ h4, .h4 {
 h5, .h5 {
   font-size: 1.25rem; }
 
-h6, .h6 {
-  font-size: 1rem; }
 
 .lead {
   font-size: 1.25rem;
@@ -8503,6 +8501,46 @@ h1, h2, h3, h4, h5,
   color: #3e64ff;
   font-size: 30px; }
 
+.video-wrap {position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;}
+.video-wrap iframe,
+.video-wrap object,
+.video-wrap embed {position:absolute; top:0; left:0; width:100%; height:100%;}
+
+.projectwrapper{
+  margin: 0 5px;
+  width: 100%;
+}
+
+.title{
+  font-weight:700;
+  margin-bottom: 30px;
+}
+.detail{
+  width: 100%;
+}
+
+h6, .h6{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.projectwrapper .imagewrapper{
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  align-items: center;
+  object-fit: contain;
+}
+
+.imagewrapper img{
+  position:absolute;
+  height: auto;
+  object-fit: contain;
+  margin: 0 5px;
+}
+
 @-webkit-keyframes wheel-up-down {
   100% {
     margin-top: 25px;
@@ -9673,42 +9711,4 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
-.video-wrap {position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;}
-.video-wrap iframe,
-.video-wrap object,
-.video-wrap embed {position:absolute; top:0; left:0; width:100%; height:100%;}
 
-.projectwrapper{
-	margin: 0 5px;
-	width: 100%;
-}
-
-.title{
-	font-weight:700;
-	margin-bottom: 30px;
-}
-.detail{
-	width: 100%;
-}
-
-h6{
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 1.2;
-	color: $darken;
-}
-
-.projectwrapper .imagewrapper{
-	width: 100%;
-	height: 200px;
-	margin-bottom: 10px;
-	align-items: center;
-	object-fit: contain;
-}
-
-.imagewrapper img{
-	position:absolute;
-	height: auto;
-	object-fit: contain;
-	margin: 0 5px;
-}
