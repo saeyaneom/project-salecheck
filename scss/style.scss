@@ -64,14 +64,6 @@ h1, h2, h3, h4, h5,
 	color: $primary!important;
 }
 
-.screenshot {
-	height: 150px;
-}
-
-.screenshot > .img{
-	position: absolute;
-	object-fit: cover;
-}
 
 .ftco-navbar-light {
 	background: transparent!important;
@@ -1980,11 +1972,11 @@ textarea.form-control {
 	width: 100%;
 }
 
-.detail h6{
-	font-weight: 300;
-	font-size: 20px;
-	color: #000000;
-	width: 100%;
+h6{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.2;
+	color: $darken;
 }
 
 .projectwrapper > .imagewrapper{
