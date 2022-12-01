@@ -1981,8 +1981,9 @@ textarea.form-control {
 }
 
 .detail h6{
+	font-weight: 300;
 	font-size: 20px;
-	color: #191919;
+	color: #000000;
 	width: 100%;
 }
 
@@ -1992,15 +1993,17 @@ textarea.form-control {
 	margin-bottom: 10px;
 	align-items: center;
 	object-fit: contain;
-	img{
-		position:relative;
-		height: auto;
-	}
 	h5{
 		font-size: 15px;
 		font-weight: 300;
 		align-self: center;
 	}
+}
+.imagewrapper img{
+	
+	position:absolute;
+	height: auto;
+	
 }
 
 .littletitle{
