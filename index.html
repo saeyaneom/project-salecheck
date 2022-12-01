@@ -104,9 +104,9 @@
 							<h2 class="heading" style="margin-bottom: 10px;">What we used...</h2>
 							<div class="detail">
 								<div class="imagewrapper">
-									<img src="images/react.js.png" style="height: 100px;"/>
+									<img src="images/react.js.png" style="height: 100px;" />
 									<img src="images/bs.png" style="height: 100px;" />
-									<img src="images/selenium.png" style="height: 100px;"/>
+									<img src="images/selenium.png" style="height: 100px;" />
 								</div>
 								<h6>
 									We utilized <b>React.js</b> to implement screen, and <b>Beautiful Soup</b> and <b>Selenium</b>
@@ -124,24 +124,43 @@
 									<img src="images/crawling2.png" />
 								</div>
 								<div class="detail">
-									We crawled brands' data wheter they were on sale or not from Google News.
+									<h4>
+										We crawled brands' data wheter they were on sale or not from Google News.
 									We collected data from 01.01.2017 to 10.01.2018.
+									</h4>
 								</div>
 
 								<h3>Time Series Prediction Models</h3>
 								<div class="detail">
-									We utilized Long Short-Term Memory (LSTM), Seasonal Auto-Regressive Integrated Moving Average (SARIMA),
-									and Prophet module from facebook. We made models and compared the results. 
+									<h6>
+										We utilized Long Short-Term Memory (LSTM), Seasonal Auto-Regressive Integrated Moving Average (SARIMA),
+									and Prophet module from facebook. We made models with one feature(whether the brand is sale or not) 
+									and compared the results. 
+									</h6>
 								</div>
 								<div class="imagewrapper">
-									Example Brand. Kitty Bunny Pony
-									<img src="images/LSTM-1.png" />
-									<img src="images/SARIMA.png" />
-									<img src="images/prophet.png" />
-									The graphs are prediction result of LSTM, SARIMA, prophet. 
-
+									<h4>Example Brand. Kitty Bunny Pony</h4>
+									<img src="images/LSTM-1.png" />			
+									<h4>The graphs are prediction result of LSTM, SARIMA, prophet in order.</h4> 
 								</div>
-		
+
+								<h6>LSTM models used itself as trained data, so it understood the shape of ther pattern well.
+									But the further the future was predicted, the less accurate it was.
+								</h6>
+								<div class="imagewrapper">
+									<img src="images/SARIMA.png" />					
+								</div>
+									<h6>SARIMA is also fine predicting the near future, but it has poor understanding of patterns at the further future.
+									</h6>
+
+								<div class="imagewrapper">
+									<img src="images/prophet.png" />
+								</div>
+								<h6>
+									Prophet propet derived a probability of close to 20% to 50%
+									 while LSTM or SARIMA gave a probability of close to 100% when it was likely to be on sale. 
+									And the possibility of sale is over 20% is relatively high in propeht. With that standard(20%), prophet model 
+									predicted sale status very well, also in the further future. 
 							</div>
 						</div>
 						
@@ -152,9 +171,13 @@
 							Screenshots
 						</div>
 
-						<h2 class="heading" style="margin-bottom: 10px;">Results</h2>
-						<div>
-							정확도 / 예측도 
+						<div class="projectwrapper">
+							<h2 class="heading" style="margin-bottom: 10px;">Results</h2>
+							<div>
+								We checked the result with actual sale status in October and Novemeber 2022, 
+								prophet showed the most accurate prediction result. Additionally, compared to the brands data 
+								which have regular sales in fixed month, Prophet showed the fine result, too.
+							</div>
 						</div>
 
 						

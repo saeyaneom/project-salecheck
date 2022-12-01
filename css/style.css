@@ -8510,12 +8510,15 @@ h1, h2, h3, h4, h5,
   margin: 0 5px 30px;
   width: 100%;
 }
-
-.projectwrapper .h3{
+h3, .h3{
   margin-left: 10px;
   font-weight: 400;
   font-size: 23px;
   margin-bottom: 10px;
+}
+
+h4, .h4{
+  font-size: 15px;
 }
 
 .title{
@@ -8539,8 +8542,8 @@ h6, .h6{
   margin-bottom: 10px;
   text-align: center;
   object-fit: contain;
-  display: inline-flex;
-  justify-content: space-between;
+  
+  
   align-items: baseline;
 }
 
