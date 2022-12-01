@@ -8534,6 +8534,8 @@ h6, .h6{
   text-align: center;
   object-fit: contain;
   display: inline-flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .imagewrapper img{
