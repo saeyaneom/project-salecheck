@@ -1989,6 +1989,7 @@ textarea.form-control {
 	align-items: center;
 	object-fit: contain;
 	img{
+		position:relative;
 		height: 100%;
 	}
 	h5{
@@ -1998,7 +1999,7 @@ textarea.form-control {
 	}
 }
 
-.projectwrapper .littletitle{
+.littletitle{
 	font-weight: 800;
 	font-size: 30px;
 	margin-bottom: 10px;
