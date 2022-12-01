@@ -300,8 +300,8 @@ template {
 [hidden] {
   display: none !important; }
 
-h1, h2, h3, h4, h5, 
-.h1, .h2, .h3, .h4, .h5 {
+h1, h2, h3, h5, 
+.h1, .h2, .h3, .h5 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2; }
@@ -315,8 +315,6 @@ h2, .h2 {
 h3, .h3 {
   font-size: 1.75rem; }
 
-h4, .h4 {
-  font-size: 1.5rem; }
 
 h5, .h5 {
   font-size: 1.25rem; }
@@ -8519,6 +8517,7 @@ h3, .h3{
 
 h4, .h4{
   font-size: 15px;
+  color: #5a6268;
 }
 
 .title{
@@ -8542,7 +8541,7 @@ h6, .h6{
   margin-bottom: 10px;
   text-align: center;
   object-fit: contain;
-  
+  justify-content: center;
   
   align-items: baseline;
 }

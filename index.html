@@ -143,24 +143,29 @@
 									<img src="images/LSTM-1.png" style="height: 150px;" />			
 									<h4>The graphs are prediction result of LSTM, SARIMA, prophet in order.</h4> 
 								</div>
-
-								<h6>LSTM models used itself as trained data, so it understood the shape of ther pattern well.
-									But the further the future was predicted, the less accurate it was.
-								</h6>
+								<div class="detail">
+									<h6>LSTM models used itself as trained data, so it understood the shape of ther pattern well.
+										But the further the future was predicted, the less accurate it was.
+									</h6>
+								</div>
 								<div class="imagewrapper">
 									<img src="images/SARIMA.png" style="height: 150px;" />					
 								</div>
+								<div class="detail">
 									<h6>SARIMA is also fine predicting the near future, but it has poor understanding of patterns at the further future.
 									</h6>
+								</div>
 
 								<div class="imagewrapper">
 									<img src="images/prophet.png" style="height: 150px;" />
 								</div>
-								<h6>
-									Prophet propet derived a probability of close to 20% to 50%
-									 while LSTM or SARIMA gave a probability of close to 100% when it was likely to be on sale. 
-									And the possibility of sale is over 20% is relatively high in propeht. With that standard(20%), prophet model 
-									predicted sale status very well, also in the further future. 
+								<div class="detail">
+									<h6>
+										Prophet propet derived a probability of close to 20% to 50%
+										 while LSTM or SARIMA gave a probability of close to 100% when it was likely to be on sale. 
+										And the possibility of sale is over 20% is relatively high in propeht. With that standard(20%), prophet model 
+										predicted sale status very well, also in the further future. </h6>
+								</div>
 							</div>
 						</div>
 						
@@ -173,11 +178,14 @@
 
 						<div class="projectwrapper">
 							<h2 class="heading" style="margin-bottom: 10px;">Results</h2>
-							<div>
-								We checked the result with actual sale status in October and Novemeber 2022, 
-								prophet showed the most accurate prediction result. Additionally, compared to the brands data 
-								which have regular sales in fixed month, Prophet showed the fine result, too.
+							<div class="detail">
+								<h6>
+									We checked the result with actual sale status in October and Novemeber 2022, 
+									prophet showed the most accurate prediction result. Additionally, compared to the brands data 
+									which have regular sales in fixed month, Prophet showed the fine result, too.
+								</h6>
 							</div>
+							
 						</div>
 
 						
