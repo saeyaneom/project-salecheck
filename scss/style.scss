@@ -2000,10 +2000,10 @@ textarea.form-control {
 	}
 }
 .imagewrapper img{
-	
 	position:absolute;
 	height: auto;
-	
+	object-fit: contain;
+	margin: 0 5px;
 }
 
 .littletitle{
